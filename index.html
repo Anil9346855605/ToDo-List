@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+  <head>
+    <meta charset="utf-8">  
+    <title>Todo List  </title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="contact.html">
+  </head>
+  <body>
+    <style>
+      ul {
+        list-style-type: none;
+        margin: 20px;
+        padding: 0;
+      }
+      
+      li {
+        display: inline;
+        text-align: end;
+        margin: 20px 0;
+      }
+      li a{
+        text-decoration: none;
+        background: rgb(70, 21, 85);
+        margin: 20px;
+        padding: 5px 30px;
+        border-radius: 10px;
+        color: #ffffff;
+        border: 2px solid  rgb(70, 21, 85);
+        transform: transition 0.4s;
+        transition-duration: 500ms;
+      }
+      li a:hover{ 
+        color:  rgb(70, 21, 85);
+        background: #ffffff;
+        border: 2px solid  rgb(70, 21, 85);
+        font-weight: bold;
+      }
+      .clear-btn{
+        transition: transform 0.4s;
+        transition-duration: 800ms;
+      }
+      .clear-btn:hover{
+        background: linear-gradient(135deg, #0d93fa 0%, #1c49ea 100%);
+        transform: scale(1.05);
+      }
+      
+      </style>
+      </head>
+      <body>
+      
+      <ul>
+      
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="about.html">About</a></li>
+      
+      </ul>
+      
+    <h1>TO Do List</h1>
+    <div class="wrapper">
+      <div class="task-input">
+        
+        <input type="text" placeholder="Add a new task">
+      </div>
+      <div class="controls">
+        <div class="filters">
+          <span class="active" id="all">All</span>
+          <span id="pending">Pending</span>
+          <span id="completed">Completed</span>
+        </div>
+        <button class="clear-btn">Clear All</button>
+      </div>
+      <ul class="task-box"></ul>
+    </div>
+
+    <script src="index.js"></script>
+
+  </body>
+</html>
